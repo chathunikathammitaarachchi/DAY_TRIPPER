@@ -1,16 +1,12 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './components/Navbar';
-
+import React from 'react';
+import ServicesPage from './components/ServicesPage';  // Adjust the path if needed
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>
-      <Navbar />
+    <div className="App">
+      <ServicesPage />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

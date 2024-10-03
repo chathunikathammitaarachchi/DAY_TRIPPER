@@ -1,11 +1,4 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: rgb(172, 161, 147); /* Change as needed */
-    color: rgb(255, 255, 255);
-}
+
 
 .logo h1 {
     margin: 0;
@@ -32,3 +25,30 @@
     height: 40px; /* Adjust as needed */
     border-radius: 50%; /* Make it circular */
 }
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1494aa;
+    padding: 10px 20px;
+    height: 60px;
+  }
+  
+  .navbar-left .logo {
+    height: 40px;
+  }
+  
+  .navbar-right a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .user-profile {
+    height: 40px;
+    border-radius: 50%;
+  }
+  
