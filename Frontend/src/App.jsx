@@ -1,12 +1,14 @@
-import React from 'react';
-import ServicesPage from './components/ServicesPage';  // Adjust the path if needed
+import { useState } from 'react'
+import './App.css'
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div className="App">
-      <ServicesPage />
-    </div>
-  );
+    <>
+     
+    </>
+  )
 }
 
-export default App;
+export default App
