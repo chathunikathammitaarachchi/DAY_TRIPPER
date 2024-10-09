@@ -1,0 +1,46 @@
+/* src/components/ServiceForm.css */
+.service-form-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+    border: 2px solid #1494aa;
+    border-radius: 10px;
+    background-color: #f5f7fa;
+  }
+  
+  .service-form-container h2 {
+    color: #1494aa;
+    text-align: center;
+  }
+  
+  .service-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .service-form label {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .service-form input,
+  .service-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .service-form button {
+    background-color: #1494aa;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .service-form button:hover {
+    background-color: #960253;
+  }
+  

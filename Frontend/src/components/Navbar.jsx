@@ -1,19 +1,18 @@
+// src/components/Navbar.jsx
 import React from 'react';
-import './Navbar.css';  // Import the CSS file for styling
+import { Link } from 'react-router-dom';
+import './Navbar.css'; // Add some styling here
 
-// Navbar Component
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-left">
-        <img src="/images/Logo.png" alt="Day Tripper Logo" className="logo" />  {/* Add your logo image */}
-      </div>
-      <div className="navbar-right">
-        <a href="/">Home</a>
-        <a href="/services">Services</a>
-        <a href="/logout">Logout</a>
-        <img src="/images/user.png" alt="User Profile" className="user-profile" /> {/* Add a profile image */}
-      </div>
+      <h1 className="logo">Day Tripper</h1>
+      <ul className="nav-links">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/service-form">Add Service</Link></li>
+        <li><Link to="/receipt">Receipt</Link></li>
+      </ul>
     </nav>
   );
 };

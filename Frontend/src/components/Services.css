@@ -1,0 +1,68 @@
+/* src/components/Services.css */
+.services-container {
+    padding: 20px;
+    background-color: #f5f7fa;
+  }
+  
+  .services-container h2 {
+    color: #1494aa;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-card {
+    border: 2px solid #1494aa;
+    border-radius: 10px;
+    width: 250px;
+    padding: 15px;
+    background-color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+  }
+  
+  .service-card h3 {
+    color: #1494aa;
+    font-size: 20px;
+  }
+  
+  .service-card p {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .service-card button {
+    background-color: #1494aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .service-card button:hover {
+    background-color: #960253; /* Change button color on hover */
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Updated image styling */
+  .service-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Ensure image fits within box without distortion */
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
