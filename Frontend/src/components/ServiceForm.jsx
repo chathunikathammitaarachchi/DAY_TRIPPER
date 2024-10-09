@@ -20,8 +20,8 @@ const ServiceForm = () => {
   });
 
   const calculateTotal = () => {
-    const basePrice = service.price;
-    const perPersonPrice = service.perPerson;
+    const basePrice = service.price || 0;
+    const perPersonPrice = service.perPerson || 0;
     const totalPeople = parseInt(formDetails.adults) + parseInt(formDetails.children);
     return basePrice + totalPeople * perPersonPrice;
   };
@@ -29,7 +29,7 @@ const ServiceForm = () => {
   const handleReview = () => {
     const totalPrice = calculateTotal();
     const reviewData = { serviceName, formDetails, totalPrice, service };
-    navigate(`/service-review`, { state: { reviewData } });
+    navigate('/service-review', { state: { reviewData } }); // Navigate with state
   };
 
   return (
@@ -120,7 +120,7 @@ const ServiceForm = () => {
           ></textarea>
         </label>
 
-        {/* Button to review */}
+        {/* Review Button */}
         <button type="button" onClick={handleReview}>
           Review & Confirm
         </button>

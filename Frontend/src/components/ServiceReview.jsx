@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import './ServiceReview.css';
+import './ServiceReview.css'; // Make sure the import path matches the location of your CSS file
 
 const ServiceReview = () => {
   const { state } = useLocation();
@@ -9,15 +9,17 @@ const ServiceReview = () => {
   const navigate = useNavigate();
 
   const handleConfirm = () => {
-    alert(`Service: ${serviceName} confirmed with total price: $${totalPrice}`);
+    alert(`Service: ${serviceName} confirmed with a total price of: $${totalPrice}`);
+    navigate('/'); // Redirect to the home page after confirmation
   };
 
   const handleEdit = () => {
-    navigate(-1); // Go back to the form
+    navigate(`/service-form/${serviceName}`, { state: { service } });
   };
 
   const handleRemove = () => {
-    navigate('/'); // Redirect back to the services page
+    alert('Service Removed');
+    navigate('/'); // Redirect to home page
   };
 
   return (
