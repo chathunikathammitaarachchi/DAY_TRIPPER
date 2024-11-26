@@ -1,13 +1,13 @@
-package com.example.SpringMongoProject;
+package com.example.DayTripper;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringMongoProjectApplication {
+public class DayTripperApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringMongoProjectApplication.class, args);
+		SpringApplication.run(DayTripperApplication.class, args);
 	}
 
 }
