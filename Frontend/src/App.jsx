@@ -1,28 +1,44 @@
-// src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
+import Hero from './components/Hero';
 import Services from './components/Services';
-import ServiceForm from './components/ServiceForm';
-import ServiceReview from './components/ServiceReview';
+import Reviews from './components/Reviews'; 
+import Footer from './components/Footer';
+import PhotoGallery from './components/PhotoGallery';
+import PackagePage from './components/PackagePage';
+import AddPackageForm from './Admin/AddPackageForm';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          {/* Main Services Page Route */}
-          <Route path="/" element={<Services />} />
+    
+    <div>
+      <Header />
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="services">
+        <Services />
+      </section>
+      
+      <section id="packages">
+        <AddPackageForm/> 
+      </section>
 
-          {/* Dynamic Route for Service Form based on Service Name */}
-          <Route path="/service-form/:serviceName" element={<ServiceForm />} />
+      <section id="packages">
+        <PackagePage /> 
+      </section>
 
-          {/* Route for Reviewing the Service Details */}
-          <Route path="/service-review" element={<ServiceReview />} />
-        </Routes>
-      </div>
-    </Router>
+      <section id="photogallery">
+        <PhotoGallery />
+      </section>
+
+      <section id="reviews">
+        <Reviews />
+      </section>
+      <section id="contact">
+        <Footer />
+      </section>
+    </div>
   );
 }
 

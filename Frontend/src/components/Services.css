@@ -1,68 +1,41 @@
-/* src/components/Services.css */
-.services-container {
-    padding: 20px;
-    background-color: #f5f7fa;
-  }
-  
-  .services-container h2 {
-    color: #1494aa;
+.services {
+    padding: 50px 20px;
     text-align: center;
-    margin-bottom: 20px;
   }
   
-  .services-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
   }
   
   .service-card {
-    border: 2px solid #1494aa;
-    border-radius: 10px;
-    width: 250px;
-    padding: 15px;
-    background-color: white;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .service-card img {
+    width: 100%; /* Ensures the image spans the width of the card */
+    height: 150px; /* Sets a fixed height for the images */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    border-radius: 8px 8px 0 0;
   }
   
   .service-card h3 {
-    color: #1494aa;
-    font-size: 20px;
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+    color: #333;
   }
   
   .service-card p {
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .service-card button {
-    background-color: #1494aa;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .service-card button:hover {
-    background-color: #960253; /* Change button color on hover */
-  }
-  
-  .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Updated image styling */
-  .service-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover; /* Ensure image fits within box without distortion */
-    border-radius: 8px;
-    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #666;
   }
   
