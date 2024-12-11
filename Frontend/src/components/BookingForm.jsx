@@ -4,7 +4,7 @@ import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import { format, parse, startOfWeek, getDay } from "date-fns";
 import enUS from "date-fns/locale/en-US";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import "./BookingForm.css"; // Correct CSS import
+import "./BookingForm.css"; 
 
 const locales = {
   "en-US": enUS,
@@ -38,7 +38,7 @@ function BookingForm() {
       const formattedBookings = result.data.map((booking) => {
         const eventDate = new Date(`${booking.date}T${booking.time}`);
         const eventEndTime = new Date(eventDate);
-        eventEndTime.setHours(eventEndTime.getHours() + 1); // Assuming events last 1 hour
+        eventEndTime.setHours(eventEndTime.getHours() + 1); 
 
         return {
           id: booking.id,
