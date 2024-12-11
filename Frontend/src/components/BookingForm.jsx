@@ -163,7 +163,7 @@ function BookingForm() {
           )}
 
           <div className="button-group">
-            <button className="btn btn-primary mt-4" onClick={saveBooking} disabled={!!availabilityMessage}>
+          <button className="btn btn-primary mt-4" onClick={saveBooking} disabled={!!availabilityMessage}>
               Save
             </button>
           </div>
