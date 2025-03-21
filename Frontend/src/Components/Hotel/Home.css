@@ -1,0 +1,243 @@
+/* Styling for the header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #e8af5a;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.logo-img {
+  height: 50px;  /* Adjust the height as per your requirement */
+  width: auto;   /* Maintain aspect ratio */
+}
+
+/* Navbar styling */
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 70px;
+}
+
+.navbar li {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar a:hover {
+  color: #5772d6;
+}
+
+/* Call to Action button */
+.cta-button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-content {
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.hero .cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #ff7f50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+
+.hero .cta-button:hover {
+  background: #ff5722;
+}
+
+/* Booking Content (Form Section) */
+.booking-content {
+  padding: 50px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  z-index: 2;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust the form position */
+  width: 100%;
+  max-width: 600px; /* Optional: You can adjust this */
+}
+
+/* Title and Subtitle */
+.booking-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #060606;
+  margin-bottom: 10px;
+}
+
+.booking-subtitle {
+  font-size: 2rem;
+  color: #e6f6ff;
+  margin-bottom: 15px;
+}
+
+.booking-description {
+  font-size: 1.2rem;
+  color: #fcfeff;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Form Container */
+.form-container {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Softer, lighter shadow */
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #d0d1c588;
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-label {
+  font-size: 1.1rem;
+  color: #000000;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-select, .form-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background-color: #f8f8f8;
+}
+
+.form-select:focus, .form-input:focus {
+  outline: none;
+  border-color: #4e7c97;
+}
+
+.calendar-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.calendar-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.submit-button {
+  grid-column: span 2; /* Button spans full width */
+  padding: 12px 20px;
+  background-color: #ff1e0e;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #1e3d58;
+}
+
+.submit-button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-select, .form-input {
+    width: 100%;
+  }
+}
+
+/* Calendar Icon */
+.calendar-icon {
+  color: #4e7c97;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Hover and Focus States */
+.form-select:hover, .form-input:hover {
+  border-color: #4e7c97;
+}
+
+.form-select:focus, .form-input:focus {
+  border-color: #4e7c97;
+  background-color: #fff;
+}
